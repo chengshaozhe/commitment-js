@@ -30,3 +30,4 @@ const WINSETTING = {
   h: (EXPSETTINGS.cellSize + EXPSETTINGS.padding) * EXPSETTINGS.matrixsize + EXPSETTINGS.padding
 
 }
+test
