@@ -1,0 +1,37 @@
+[HIT Configuration]
+title = Play Game (10-15 min) + up to $1.20 bonus
+description = Play a simple game
+keywords = Psychology, Decision Making, Game
+lifetime = 24
+us_only = false
+approve_requirement = 95
+number_hits_approved = 100
+require_master_workers = false
+
+
+[Database Parameters]
+database_url = sqlite:///participants.db
+assignments_table_name = commitment_experiment
+
+
+[Server Parameters]
+host = 0.0.0.0
+port = 50003
+logfile = server.log
+loglevel = 1
+
+
+[Task Parameters]
+experiment_code_version = version1
+num_conds = 1
+num_counters = 1
+contact_email_on_error = chengshaozhe@gmail.com
+browser_exclude_rule = MSIE, mobile, tablet
+allow_repeats = false
+cutoff_time = 30
+
+
+[Shell Parameters]
+launch_in_mode = sandbox
+bonus_message = "Thanks for participating!"
+use_psiturk_ad_server = false
