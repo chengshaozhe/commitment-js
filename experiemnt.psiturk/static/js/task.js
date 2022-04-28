@@ -104,40 +104,67 @@ function isExpOver(gridMatrix,playerState,goalStates, curTrial) {
         }
         else {
         	psiTurk.recordTrialData(allTrialsData);
-        	finish();
+        	// finish();
+        	end_experiment();
             reject('over');
         }
         }, 0);
     }).then(res => runExperiment(gridMatrix,playerState,goalStates, curTrial))
 }
 
+
+function end_experiment() {
+// 	$('body').empty()
+// 	$('body').append('<div id="displaydiv"></div>')
+
+//   var end_exp_text =
+// `Thank you for completing this experiment.\n
+// Hitting the button below will end the experiment.`;
+
+//   $('#displaydiv').append('<p id=text></p>');
+//   $('#displaydiv').append('<button id="continue">Continue</button>');
+//   $('#text').text(end_exp_text)
+//   $('#text').css({'width':'85%', 'white-space':'pre-wrap'})
+//   $('#continue').css('top','75%')
+//   $('#continue').click(function(){
+//     psiTurk.saveData({
+//       success: psiTurk.completeHIT,
+//       error: psiTurk.completeHIT // End despite the error
+//     })
+//   });
+// }
+	record_responses = function() {
+
+		psiTurk.recordTrialData({'phase':'postquestionnaire', 'status':'submit'});
+
+		$('textarea').each( function(i, val) {
+			psiTurk.recordUnstructuredData(this.id, this.value);
+		});
+		$('select').each( function(i, val) {
+			psiTurk.recordUnstructuredData(this.id, this.value);
+		});
+
+	};
+
+	psiTurk.showPage('postquestionnaire.html');
+	psiTurk.recordTrialData({'phase':'postquestionnaire', 'status':'begin'});
+
+	$("#next").click(function () {
+	    record_responses();
+	    psiTurk.saveData({
+            success: function(){
+                psiTurk.computeBonus('compute_bonus', function() {
+                	psiTurk.completeHIT(); // when finished saving compute bonus, the quit
+                });
+            },
+            error: psiTurk.completeHIT()});
+	});
+}
+
+
 var finish = function() {
     currentview = new Questionnaire();
 };
-
-
-
-async function runExperiment(gridMatrix, playerState, goalStates, curTrial) {
-
-    gridMatrix[curTrial][playerState[curTrial][0]][playerState[curTrial][1]] = OBJECT.AGENT;
-    goalStates[curTrial].forEach((state,i) => gridMatrix[curTrial][state[0]][state[1]] = OBJECT.GOAL);
-
-    let eachTrialData = {
-    	mapMatrix: Array(gridMatrix[curTrial]),
-    	playerPos: Array(playerState[curTrial]),
-    	goal1Pos: Array(goalStates[curTrial][0]),
-        goal2Pos: Array(goalStates[curTrial][1]),
-        aimAction: Array(),
-        RT: Array()
-    };
-
-    await fixationPhase(gridMatrix[curTrial], 1000, playerState[curTrial]);
-    await drawGrid(gridMatrix[curTrial]);
-    let stepCount = 0;
-    await keyPress(gridMatrix[curTrial], playerState[curTrial], goalStates[curTrial], eachTrialData, curTrial, stepCount);
-    await blankPhase(500,curTrial,gridMatrix[curTrial]);
-    await isExpOver(gridMatrix,playerState,goalStates,curTrial)
-    }
 
 
 /****************
@@ -202,6 +229,28 @@ var Questionnaire = function() {
 };
 
 
+async function runExperiment(gridMatrix, playerState, goalStates, curTrial) {
+
+    gridMatrix[curTrial][playerState[curTrial][0]][playerState[curTrial][1]] = OBJECT.AGENT;
+    goalStates[curTrial].forEach((state,i) => gridMatrix[curTrial][state[0]][state[1]] = OBJECT.GOAL);
+
+    let eachTrialData = {
+    	mapMatrix: Array(gridMatrix[curTrial]),
+    	playerPos: Array(playerState[curTrial]),
+    	goal1Pos: Array(goalStates[curTrial][0]),
+        goal2Pos: Array(goalStates[curTrial][1]),
+        aimAction: Array(),
+        RT: Array()
+    };
+
+    await fixationPhase(gridMatrix[curTrial], 1000, playerState[curTrial]);
+    await drawGrid(gridMatrix[curTrial]);
+    let stepCount = 0;
+    await keyPress(gridMatrix[curTrial], playerState[curTrial], goalStates[curTrial], eachTrialData, curTrial, stepCount);
+    // await blankPhase(500,curTrial,gridMatrix[curTrial]);
+    await isExpOver(gridMatrix,playerState,goalStates,curTrial)
+    }
+
 /*******************
  * Run Task
  ******************/
@@ -227,7 +276,7 @@ var playerStateList = [initState,initState,initState,initState,initState,initSta
 const goalList = [goalstates,goalstates,goalstates,goalstates,goalstates,goalstates,goalstates]
 var allTrialsData = new Array();
 var curTrial = 0;
-var nTrials = 2;
+var nTrials = 1;
 
 
 // $(window).on('load', async () => {

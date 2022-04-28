@@ -1831,3 +1831,150 @@ WHERE commitment_experiment.workerid = ?]
 [2022-04-28 23:20:32 +0800] [11564] [INFO] Worker exiting (pid: 11564)
 [2022-04-28 23:20:32 +0800] [11558] [INFO] Worker exiting (pid: 11558)
 [2022-04-28 23:20:34 +0800] [11554] [INFO] Shutting down: Master
+[2022-04-28 23:31:34 +0800] [22583] [INFO] Starting gunicorn 20.0.4
+[2022-04-28 23:31:34 +0800] [22583] [INFO] Listening at: http://0.0.0.0:50003 (22583)
+[2022-04-28 23:31:34 +0800] [22583] [INFO] Using worker: gevent
+[2022-04-28 23:31:34 +0800] [22586] [INFO] Booting worker with pid: 22586
+[2022-04-28 23:31:34 +0800] [22587] [INFO] Booting worker with pid: 22587
+[2022-04-28 23:31:34 +0800] [22588] [INFO] Booting worker with pid: 22588
+[2022-04-28 23:31:34 +0800] [22589] [INFO] Booting worker with pid: 22589
+[2022-04-28 23:31:34 +0800] [22590] [INFO] Booting worker with pid: 22590
+[2022-04-28 23:31:34 +0800] [22591] [INFO] Booting worker with pid: 22591
+[2022-04-28 23:31:34 +0800] [22592] [INFO] Booting worker with pid: 22592
+[2022-04-28 23:31:34 +0800] [22593] [INFO] Booting worker with pid: 22593
+[2022-04-28 23:31:34 +0800] [22594] [INFO] Booting worker with pid: 22594
+2022-04-28 23:31:38,122 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:38,127 Scheduler started
+2022-04-28 23:31:38,129 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:38,171 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:38,175 Scheduler started
+2022-04-28 23:31:38,178 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:38,485 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:38,539 Scheduler started
+2022-04-28 23:31:38,541 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:39,036 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:39,041 Scheduler started
+2022-04-28 23:31:39,042 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:39,078 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:39,084 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:39,084 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:39,087 Scheduler started
+2022-04-28 23:31:39,088 Scheduler started
+2022-04-28 23:31:39,089 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:39,091 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:39,099 Scheduler started
+2022-04-28 23:31:39,104 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:39,124 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:39,130 Scheduler started
+2022-04-28 23:31:39,134 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:39,181 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 23:31:39,184 Scheduler started
+2022-04-28 23:31:39,186 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 23:31:41,668 Accessing /exp: debugQ8IUHB debugFFWFZL debugHHL3NR 
+2022-04-28 23:31:41,673 given Counter({(0, 0): 0}) chose (0, 0)
+2022-04-28 23:31:41,905 GET /sync route with id: debugHHL3NR:debugFFWFZL
+[2022-04-29 01:16:50 +0800] [22583] [INFO] Handling signal: winch
+[2022-04-29 01:46:52 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:10466)
+[2022-04-29 01:46:52 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:10471)
+[2022-04-29 01:46:52 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:10474)
+[2022-04-29 01:46:52 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:88119)
+[2022-04-29 01:46:52 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:88120)
+[2022-04-29 01:46:52 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:19368)
+[2022-04-29 01:46:52 +0800] [22583] [CRITICAL] WORKER TIMEOUT (pid:22586)
+[2022-04-29 01:46:52 +0800] [22586] [INFO] Worker exiting (pid: 22586)
+[2022-04-29 01:46:57 +0800] [34329] [INFO] Booting worker with pid: 34329
+2022-04-29 01:47:03,444 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 01:47:03,445 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 01:47:03,455 Scheduler started
+2022-04-29 01:47:03,455 Scheduler started
+2022-04-29 01:47:03,458 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 01:47:03,459 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 01:47:03,499 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 01:47:03,503 Scheduler started
+2022-04-29 01:47:03,507 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 01:47:03,551 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 01:47:03,555 Scheduler started
+2022-04-29 01:47:03,558 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 01:47:03,568 Scheduler started
+2022-04-29 01:47:03,558 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 01:47:03,575 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 01:47:03,577 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 01:47:03,579 Scheduler started
+2022-04-29 01:47:03,580 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 01:47:03,831 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 01:47:03,840 Scheduler started
+2022-04-29 01:47:03,843 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+[2022-04-29 02:28:04 +0800] [22583] [INFO] Handling signal: winch
+2022-04-29 02:29:44,906 Accessing /exp: debugQ8IUHB debugFFWFZL debugHHL3NR 
+2022-04-29 02:29:45,329 GET /sync route with id: debugHHL3NR:debugFFWFZL
+2022-04-29 02:32:33,632 Accessing /exp: debugQ8IUHB debugFFWFZL debugHHL3NR 
+2022-04-29 02:32:33,966 GET /sync route with id: debugHHL3NR:debugFFWFZL
+2022-04-29 02:33:17,481 Accessing /exp: debugQ8IUHB debugFFWFZL debugHHL3NR 
+2022-04-29 02:33:18,037 GET /sync route with id: debugHHL3NR:debugFFWFZL
+2022-04-29 02:34:07,111 Accessing /exp: debugQ8IUHB debugFFWFZL debugHHL3NR 
+2022-04-29 02:34:07,493 GET /sync route with id: debugHHL3NR:debugFFWFZL
+2022-04-29 02:34:22,492 Accessing /exp: debugQ8IUHB debugFFWFZL debugHHL3NR 
+2022-04-29 02:34:22,956 GET /sync route with id: debugHHL3NR:debugFFWFZL
+2022-04-29 02:34:53,395 Accessing /exp: debugQ8IUHB debugFFWFZL debugHHL3NR 
+2022-04-29 02:34:53,743 GET /sync route with id: debugHHL3NR:debugFFWFZL
+2022-04-29 02:34:58,099 PUT /sync route with id: debugHHL3NR:debugFFWFZL
+2022-04-29 02:34:58,144 saved data for debugHHL3NR:debugFFWFZL (current trial: 1)
+2022-04-29 02:35:28,416 Submitted experiment for debugHHL3NR:debugFFWFZL
+2022-04-29 02:35:45,142 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:35:45,165 given Counter({(0, 0): 1}) chose (0, 0)
+2022-04-29 02:35:45,326 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:35:52,700 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:35:52,723 saved data for debugS3RAUT:debugHFDSYU (current trial: 1)
+2022-04-29 02:39:51,759 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:40:12,270 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:40:25,093 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:40:25,508 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:40:32,681 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:40:32,768 saved data for debugS3RAUT:debugHFDSYU (current trial: 4)
+2022-04-29 02:41:04,528 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:41:04,957 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:41:11,363 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:41:11,381 saved data for debugS3RAUT:debugHFDSYU (current trial: 7)
+2022-04-29 02:41:12,510 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:41:12,521 saved data for debugS3RAUT:debugHFDSYU (current trial: 8)
+2022-04-29 02:41:20,591 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:41:21,041 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:41:27,441 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:41:27,454 saved data for debugS3RAUT:debugHFDSYU (current trial: 11)
+2022-04-29 02:41:28,411 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:41:28,439 saved data for debugS3RAUT:debugHFDSYU (current trial: 12)
+2022-04-29 02:42:53,955 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:42:54,678 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:42:55,119 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:42:56,231 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:43:02,649 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:43:02,729 saved data for debugS3RAUT:debugHFDSYU (current trial: 15)
+2022-04-29 02:43:03,754 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:43:03,767 saved data for debugS3RAUT:debugHFDSYU (current trial: 16)
+2022-04-29 02:43:03,951 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:43:03,992 saved data for debugS3RAUT:debugHFDSYU (current trial: 17)
+2022-04-29 02:43:04,164 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:43:04,200 saved data for debugS3RAUT:debugHFDSYU (current trial: 18)
+2022-04-29 02:43:29,475 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:43:29,512 saved data for debugS3RAUT:debugHFDSYU (current trial: 19)
+2022-04-29 02:43:45,986 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:43:46,547 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:43:53,764 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:43:54,037 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:44:34,342 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:44:34,827 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:45:09,087 Accessing /exp: debug6KW1XM debugHFDSYU debugS3RAUT 
+2022-04-29 02:45:09,458 GET /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:45:14,844 PUT /sync route with id: debugS3RAUT:debugHFDSYU
+2022-04-29 02:45:14,858 saved data for debugS3RAUT:debugHFDSYU (current trial: 22)
+[2022-04-29 02:45:26 +0800] [22583] [INFO] Handling signal: term
+[2022-04-29 02:45:27 +0800] [22590] [INFO] Worker exiting (pid: 22590)
+[2022-04-29 02:45:27 +0800] [22592] [INFO] Worker exiting (pid: 22592)
+[2022-04-29 02:45:27 +0800] [22588] [INFO] Worker exiting (pid: 22588)
+[2022-04-29 02:45:27 +0800] [22589] [INFO] Worker exiting (pid: 22589)
+[2022-04-29 02:45:27 +0800] [22587] [INFO] Worker exiting (pid: 22587)
+[2022-04-29 02:45:27 +0800] [22594] [INFO] Worker exiting (pid: 22594)
+[2022-04-29 02:45:27 +0800] [22591] [INFO] Worker exiting (pid: 22591)
+[2022-04-29 02:45:27 +0800] [22593] [INFO] Worker exiting (pid: 22593)
+[2022-04-29 02:45:27 +0800] [34329] [INFO] Worker exiting (pid: 34329)
+[2022-04-29 02:45:28 +0800] [22583] [INFO] Shutting down: Master

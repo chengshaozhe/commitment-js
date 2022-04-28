@@ -1303,3 +1303,435 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
     f"Missing one of the following templates: {', '.join(try_these)}."
 RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:02 +0800] [22493] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:02 +0800] [22495] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:02 +0800] [22494] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:03 +0800] [22496] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:03 +0800] [22497] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:03 +0800] [22498] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:03 +0800] [22499] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:03 +0800] [22501] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
+[2022-04-28 23:31:03 +0800] [22500] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in check_templates_exist
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 61, in <listcomp>
+    [app.jinja_env.get_template(try_this) for try_this in try_these]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: thanks-mturksubmit.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment_server.py", line 68, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 70, in <module>
+    check_templates_exist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/experiment.py", line 64, in check_templates_exist
+    f"Missing one of the following templates: {', '.join(try_these)}."
+RuntimeError: Missing one of the following templates: thanks-mturksubmit.html, closepopup.html.Copy these over from a freshly-created psiturk example experiment.('TemplateNotFound', 'thanks-mturksubmit.html')
