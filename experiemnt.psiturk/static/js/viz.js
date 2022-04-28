@@ -97,7 +97,7 @@ class GridSystem {
         this.outlineContext.closePath();}
 }
 
-class fixation {
+class Fixation {
     constructor(matrix, fixationPos, ifPlayer, ifGoal, ifObstacle){
         this.matrix = matrix;
         this.fixationPos = fixationPos;
@@ -203,7 +203,7 @@ function fixationPhase(gridMatrix,fixTime,fixationPos) {
         setTimeout(() => {
             fixationPos = arguments[2] ? arguments[2] : [Math.floor(1/2 * gridMatrix.length),
                 Math.floor(1/2 * gridMatrix.length)];
-            let fix = new fixation(gridMatrix, fixationPos, false, false, false);
+            let fix = new Fixation(gridMatrix, fixationPos, false, false, false);
             fix.render();
             resolve('done');
         }, 0);

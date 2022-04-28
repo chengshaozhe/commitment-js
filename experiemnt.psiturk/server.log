@@ -1638,3 +1638,196 @@ WHERE commitment_experiment.workerid = ?]
 [2022-04-27 23:41:35 +0800] [74429] [INFO] Worker exiting (pid: 74429)
 [2022-04-27 23:41:35 +0800] [74434] [INFO] Worker exiting (pid: 74434)
 [2022-04-27 23:41:35 +0800] [74425] [INFO] Shutting down: Master
+[2022-04-28 02:21:36 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:10470)
+[2022-04-28 02:21:36 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:10473)
+[2022-04-28 02:21:36 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:70043)
+2022-04-28 02:21:57,810 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 02:21:57,818 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 02:21:57,823 Scheduler started
+2022-04-28 02:21:57,825 Scheduler started
+2022-04-28 02:21:57,827 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 02:21:57,828 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 02:21:57,839 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 02:21:57,845 Scheduler started
+2022-04-28 02:21:57,849 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+[2022-04-28 07:19:31 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:10472)
+2022-04-28 07:19:42,168 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 07:19:42,180 Scheduler started
+2022-04-28 07:19:42,183 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+[2022-04-28 07:59:04 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:18283)
+2022-04-28 07:59:09,502 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 07:59:09,511 Scheduler started
+2022-04-28 07:59:09,512 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+[2022-04-28 21:55:38 +0800] [11554] [INFO] Starting gunicorn 20.0.4
+[2022-04-28 21:55:38 +0800] [11554] [INFO] Listening at: http://0.0.0.0:50003 (11554)
+[2022-04-28 21:55:38 +0800] [11554] [INFO] Using worker: gevent
+[2022-04-28 21:55:38 +0800] [11557] [INFO] Booting worker with pid: 11557
+[2022-04-28 21:55:38 +0800] [11558] [INFO] Booting worker with pid: 11558
+[2022-04-28 21:55:39 +0800] [11559] [INFO] Booting worker with pid: 11559
+[2022-04-28 21:55:39 +0800] [11560] [INFO] Booting worker with pid: 11560
+[2022-04-28 21:55:39 +0800] [11561] [INFO] Booting worker with pid: 11561
+[2022-04-28 21:55:39 +0800] [11562] [INFO] Booting worker with pid: 11562
+[2022-04-28 21:55:39 +0800] [11563] [INFO] Booting worker with pid: 11563
+[2022-04-28 21:55:39 +0800] [11564] [INFO] Booting worker with pid: 11564
+[2022-04-28 21:55:39 +0800] [11565] [INFO] Booting worker with pid: 11565
+2022-04-28 21:55:41,573 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:41,578 Scheduler started
+2022-04-28 21:55:41,581 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:42,664 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:42,667 Scheduler started
+2022-04-28 21:55:42,883 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:43,607 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:43,625 Scheduler started
+2022-04-28 21:55:43,627 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:43,692 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:43,695 Scheduler started
+2022-04-28 21:55:43,725 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:43,731 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:43,746 Scheduler started
+2022-04-28 21:55:43,755 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:43,767 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:43,805 Scheduler started
+2022-04-28 21:55:43,807 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:43,851 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:43,859 Scheduler started
+2022-04-28 21:55:43,859 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:43,860 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:43,861 Scheduler started
+2022-04-28 21:55:43,862 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-28 21:55:43,863 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:43,873 Scheduler started
+2022-04-28 21:55:43,876 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-28 21:55:49,441 Accessing /exp: debugOR2A7J debugBMCGJY debug0FST30 
+2022-04-28 21:55:49,454 given Counter({(0, 0): 0}) chose (0, 0)
+2022-04-28 21:55:49,692 GET /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:55:51,608 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:55:51,615 saved data for debug0FST30:debugBMCGJY (current trial: 2)
+2022-04-28 21:55:51,617 Accessing /inexp
+2022-04-28 21:56:32,207 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:56:32,227 saved data for debug0FST30:debugBMCGJY (current trial: 65)
+2022-04-28 21:56:37,237 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:56:37,277 saved data for debug0FST30:debugBMCGJY (current trial: 66)
+2022-04-28 21:56:40,597 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:56:40,619 saved data for debug0FST30:debugBMCGJY (current trial: 67)
+2022-04-28 21:56:48,168 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:56:48,192 saved data for debug0FST30:debugBMCGJY (current trial: 68)
+2022-04-28 21:56:49,533 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:56:49,582 saved data for debug0FST30:debugBMCGJY (current trial: 69)
+2022-04-28 21:56:49,803 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:56:49,828 saved data for debug0FST30:debugBMCGJY (current trial: 70)
+[2022-04-28 21:57:06 +0800] [11554] [INFO] Handling signal: winch
+2022-04-28 21:58:36,234 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:58:36,268 saved data for debug0FST30:debugBMCGJY (current trial: 71)
+2022-04-28 21:58:38,671 PUT /sync route with id: debug0FST30:debugBMCGJY
+2022-04-28 21:58:38,706 saved data for debug0FST30:debugBMCGJY (current trial: 72)
+2022-04-28 22:14:12,791 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:14:12,799 given Counter({(0, 0): 1}) chose (0, 0)
+2022-04-28 22:14:13,012 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:14:14,651 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:14:14,651 Accessing /inexp
+2022-04-28 22:14:14,668 saved data for debugRUUS0G:debugQNJ5BE (current trial: 2)
+2022-04-28 22:16:04,581 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:16:04,767 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:16:05,880 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:16:05,881 Accessing /inexp
+2022-04-28 22:16:05,890 saved data for debugRUUS0G:debugQNJ5BE (current trial: 4)
+2022-04-28 22:16:24,556 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:16:24,572 saved data for debugRUUS0G:debugQNJ5BE (current trial: 55)
+2022-04-28 22:25:08,926 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:25:59,855 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:26:00,245 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:26:01,371 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:26:01,393 saved data for debugRUUS0G:debugQNJ5BE (current trial: 57)
+2022-04-28 22:26:01,398 Accessing /inexp
+2022-04-28 22:26:22,921 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:26:23,028 saved data for debugRUUS0G:debugQNJ5BE (current trial: 113)
+2022-04-28 22:29:26,588 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:43:05,879 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:43:06,140 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:43:07,923 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:43:07,925 Accessing /inexp
+2022-04-28 22:43:08,004 saved data for debugRUUS0G:debugQNJ5BE (current trial: 115)
+2022-04-28 22:43:20,531 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:43:20,562 saved data for debugRUUS0G:debugQNJ5BE (current trial: 118)
+2022-04-28 22:48:54,637 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:49:18,814 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:49:19,761 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:49:21,955 Accessing /inexp
+2022-04-28 22:49:21,955 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:49:22,099 saved data for debugRUUS0G:debugQNJ5BE (current trial: 120)
+2022-04-28 22:50:49,833 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:50:50,248 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:50:52,125 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:50:52,161 saved data for debugRUUS0G:debugQNJ5BE (current trial: 122)
+2022-04-28 22:50:52,173 Accessing /inexp
+2022-04-28 22:51:07,961 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:51:08,062 saved data for debugRUUS0G:debugQNJ5BE (current trial: 166)
+2022-04-28 22:59:17,965 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 22:59:18,343 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:59:24,935 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 22:59:24,951 Accessing /inexp
+2022-04-28 22:59:24,977 saved data for debugRUUS0G:debugQNJ5BE (current trial: 168)
+2022-04-28 23:00:33,193 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:00:33,355 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:00:34,791 Accessing /inexp
+2022-04-28 23:00:34,791 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:00:34,818 saved data for debugRUUS0G:debugQNJ5BE (current trial: 170)
+2022-04-28 23:00:37,408 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:00:37,590 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:00:38,489 Accessing /inexp
+2022-04-28 23:00:38,489 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:00:38,539 saved data for debugRUUS0G:debugQNJ5BE (current trial: 172)
+2022-04-28 23:00:39,337 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:00:39,508 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:08,611 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:02:09,029 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:11,332 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:11,332 Accessing /inexp
+2022-04-28 23:02:11,380 saved data for debugRUUS0G:debugQNJ5BE (current trial: 174)
+2022-04-28 23:02:18,653 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:02:18,854 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:20,465 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:20,465 Accessing /inexp
+2022-04-28 23:02:20,494 saved data for debugRUUS0G:debugQNJ5BE (current trial: 176)
+2022-04-28 23:02:21,263 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:02:21,363 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:29,536 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:02:29,832 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:31,179 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:02:31,211 saved data for debugRUUS0G:debugQNJ5BE (current trial: 178)
+2022-04-28 23:02:31,220 Accessing /inexp
+2022-04-28 23:02:32,630 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:02:32,957 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:06:29,313 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:06:29,472 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:06:40,774 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:06:40,843 saved data for debugRUUS0G:debugQNJ5BE (current trial: 181)
+2022-04-28 23:15:00,428 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:15:00,662 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:11,648 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:11,700 saved data for debugRUUS0G:debugQNJ5BE (current trial: 184)
+2022-04-28 23:15:17,114 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:17,153 saved data for debugRUUS0G:debugQNJ5BE (current trial: 185)
+2022-04-28 23:15:45,840 Accessing /exp: debugPG5USK debugQNJ5BE debugRUUS0G 
+2022-04-28 23:15:46,853 GET /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:56,145 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:56,268 saved data for debugRUUS0G:debugQNJ5BE (current trial: 188)
+2022-04-28 23:15:57,574 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:57,670 saved data for debugRUUS0G:debugQNJ5BE (current trial: 189)
+2022-04-28 23:15:58,747 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:58,855 saved data for debugRUUS0G:debugQNJ5BE (current trial: 190)
+2022-04-28 23:15:59,158 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:59,326 saved data for debugRUUS0G:debugQNJ5BE (current trial: 191)
+2022-04-28 23:15:59,426 PUT /sync route with id: debugRUUS0G:debugQNJ5BE
+2022-04-28 23:15:59,818 saved data for debugRUUS0G:debugQNJ5BE (current trial: 192)
+[2022-04-28 23:20:32 +0800] [11554] [INFO] Handling signal: term
+[2022-04-28 23:20:32 +0800] [11562] [INFO] Worker exiting (pid: 11562)
+[2022-04-28 23:20:32 +0800] [11557] [INFO] Worker exiting (pid: 11557)
+[2022-04-28 23:20:32 +0800] [11565] [INFO] Worker exiting (pid: 11565)
+[2022-04-28 23:20:32 +0800] [11560] [INFO] Worker exiting (pid: 11560)
+[2022-04-28 23:20:32 +0800] [11559] [INFO] Worker exiting (pid: 11559)
+[2022-04-28 23:20:32 +0800] [11561] [INFO] Worker exiting (pid: 11561)
+[2022-04-28 23:20:32 +0800] [11563] [INFO] Worker exiting (pid: 11563)
+[2022-04-28 23:20:32 +0800] [11564] [INFO] Worker exiting (pid: 11564)
+[2022-04-28 23:20:32 +0800] [11558] [INFO] Worker exiting (pid: 11558)
+[2022-04-28 23:20:34 +0800] [11554] [INFO] Shutting down: Master

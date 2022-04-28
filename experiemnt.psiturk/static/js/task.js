@@ -1,10 +1,6 @@
 
-// Initalize psiturk object
 var psiTurk = new PsiTurk(uniqueId, adServerLoc, mode);
 
-var mycondition = condition;  // these two variables are passed by the psiturk server process
-var mycounterbalance = counterbalance;  // they tell you which condition you have been assigned to
-// they are not used in the stroop code but may be useful to you
 
 // All pages to be loaded
 var pages = [
@@ -77,26 +73,23 @@ function keyPress(gridMatrix,playerState,goalStates, eachTrialData, curTrial) {
                 drawGrid(gridMatrix);
                 $(document).off("keydown.task_response")
                 trialOver = isGoalReached(playerState, goalStates);
-
             };
 
             //data recording
             eachTrialData.RT.push(new Date().getTime() - timestamp1);
             eachTrialData.playerPos.push(playerState);
-            eachTrialData.ifGoal.push(trialOver);
             eachTrialData.aimAction.push(action);
 
-            psiTurk.recordTrialData(eachTrialData)
+            // psiTurk.recordTrialData(eachTrialData)
 
             if (trialOver) {
                 allTrialsData[curTrial] = eachTrialData;
                 reject('break');
             } else {
-
                 resolve('done');
             }
         })
-    }).then (res => keyPress(gridMatrix,playerState,goalStates,eachTrialData, curTrial)).catch(
+    }).then(res => keyPress(gridMatrix,playerState,goalStates,eachTrialData, curTrial)).catch(
         bre => console.log()).then(res => new Promise(resolve => {setTimeout(() => {
         resolve('done');
     }, 0)}));
@@ -122,20 +115,30 @@ var finish = function() {
     currentview = new Questionnaire();
 };
 
+
+
 async function runExperiment(gridMatrix, playerState, goalStates, curTrial) {
-    gridMatrix[curTrial][playerState[curTrial][0]][playerState[curTrial][1]] = OBJECT.AGENT
+
+    gridMatrix[curTrial][playerState[curTrial][0]][playerState[curTrial][1]] = OBJECT.AGENT;
     goalStates[curTrial].forEach((state,i) => gridMatrix[curTrial][state[0]][state[1]] = OBJECT.GOAL);
 
-    let eachTrialData = {mapMatrix: Array(gridMatrix[curTrial]), playerPos: Array(playerState[curTrial]), goal1Pos: Array(goalStates[curTrial][0]),
-        goal2Pos: Array(goalStates[curTrial][1]), ifGoal: Array(), aimAction: Array(), RT: Array()};
+    let eachTrialData = {
+    	mapMatrix: Array(gridMatrix[curTrial]),
+    	playerPos: Array(playerState[curTrial]),
+    	goal1Pos: Array(goalStates[curTrial][0]),
+        goal2Pos: Array(goalStates[curTrial][1]),
+        aimAction: Array(),
+        RT: Array()
+    };
 
-    await fixationPhase(gridMatrix[curTrial], 2000, playerState[curTrial]);
+    await fixationPhase(gridMatrix[curTrial], 1000, playerState[curTrial]);
     await drawGrid(gridMatrix[curTrial]);
     let stepCount = 0;
     await keyPress(gridMatrix[curTrial], playerState[curTrial], goalStates[curTrial], eachTrialData, curTrial, stepCount);
-    await blankPhase(1000,curTrial,gridMatrix[curTrial]);
+    await blankPhase(500,curTrial,gridMatrix[curTrial]);
     await isExpOver(gridMatrix,playerState,goalStates,curTrial)
     }
+
 
 /****************
 * Questionnaire *
@@ -224,16 +227,16 @@ var playerStateList = [initState,initState,initState,initState,initState,initSta
 const goalList = [goalstates,goalstates,goalstates,goalstates,goalstates,goalstates,goalstates]
 var allTrialsData = new Array();
 var curTrial = 0;
-var nTrials = 3;
+var nTrials = 2;
 
 
-$(window).on('load', async () => {
-    await init;
-    psiTurk.doInstructions(
-    	instructionPages, // a list of pages you want to display in sequence
-    	function() {runExperiment(gridMatrixList,playerStateList,goalList, curTrial) }
-    );
-});
+// $(window).on('load', async () => {
+//     await init;
+//     psiTurk.doInstructions(
+//     	instructionPages, // a list of pages you want to display in sequence
+//     	function() {runExperiment(gridMatrixList,playerStateList,goalList, curTrial) }
+//     );
+// });
 
 
-// runExperiment(gridMatrixList,playerStateList,goalList, curTrial)
+runExperiment(gridMatrixList,playerStateList,goalList, curTrial)
