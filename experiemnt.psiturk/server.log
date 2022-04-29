@@ -1978,3 +1978,94 @@ WHERE commitment_experiment.workerid = ?]
 [2022-04-29 02:45:27 +0800] [22593] [INFO] Worker exiting (pid: 22593)
 [2022-04-29 02:45:27 +0800] [34329] [INFO] Worker exiting (pid: 34329)
 [2022-04-29 02:45:28 +0800] [22583] [INFO] Shutting down: Master
+[2022-04-29 04:48:22 +0800] [10463] [CRITICAL] WORKER TIMEOUT (pid:34312)
+2022-04-29 04:48:33,657 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 04:48:33,665 Scheduler started
+2022-04-29 04:48:33,667 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+[2022-04-29 14:24:00 +0800] [18923] [INFO] Starting gunicorn 20.0.4
+[2022-04-29 14:24:00 +0800] [18923] [INFO] Listening at: http://0.0.0.0:50003 (18923)
+[2022-04-29 14:24:00 +0800] [18923] [INFO] Using worker: gevent
+[2022-04-29 14:24:00 +0800] [18931] [INFO] Booting worker with pid: 18931
+[2022-04-29 14:24:00 +0800] [18932] [INFO] Booting worker with pid: 18932
+[2022-04-29 14:24:01 +0800] [18933] [INFO] Booting worker with pid: 18933
+[2022-04-29 14:24:01 +0800] [18934] [INFO] Booting worker with pid: 18934
+[2022-04-29 14:24:01 +0800] [18935] [INFO] Booting worker with pid: 18935
+[2022-04-29 14:24:01 +0800] [18936] [INFO] Booting worker with pid: 18936
+[2022-04-29 14:24:01 +0800] [18937] [INFO] Booting worker with pid: 18937
+[2022-04-29 14:24:01 +0800] [18938] [INFO] Booting worker with pid: 18938
+[2022-04-29 14:24:01 +0800] [18939] [INFO] Booting worker with pid: 18939
+2022-04-29 14:24:03,844 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:03,848 Scheduler started
+2022-04-29 14:24:03,850 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:04,288 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:04,295 Scheduler started
+2022-04-29 14:24:04,297 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:05,302 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:05,305 Scheduler started
+2022-04-29 14:24:05,307 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:05,537 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:05,541 Scheduler started
+2022-04-29 14:24:05,563 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:05,900 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:05,906 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:05,906 Scheduler started
+2022-04-29 14:24:05,909 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:05,929 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:05,940 Scheduler started
+2022-04-29 14:24:05,940 Scheduler started
+2022-04-29 14:24:05,944 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:05,952 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:06,154 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:06,166 Scheduler started
+2022-04-29 14:24:06,169 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:06,241 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:24:06,245 Scheduler started
+2022-04-29 14:24:06,249 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:24:09,229 Accessing /exp: debugR3J3W5 debugHH8V0B debugRFKZFQ 
+2022-04-29 14:24:09,238 given Counter({(0, 0): 2}) chose (0, 0)
+2022-04-29 14:24:09,546 GET /sync route with id: debugRFKZFQ:debugHH8V0B
+[2022-04-29 14:54:30 +0800] [2543] [INFO] Starting gunicorn 20.0.4
+[2022-04-29 14:54:30 +0800] [2543] [INFO] Listening at: http://0.0.0.0:50003 (2543)
+[2022-04-29 14:54:30 +0800] [2543] [INFO] Using worker: gevent
+[2022-04-29 14:54:30 +0800] [2546] [INFO] Booting worker with pid: 2546
+[2022-04-29 14:54:30 +0800] [2547] [INFO] Booting worker with pid: 2547
+[2022-04-29 14:54:30 +0800] [2548] [INFO] Booting worker with pid: 2548
+[2022-04-29 14:54:30 +0800] [2549] [INFO] Booting worker with pid: 2549
+[2022-04-29 14:54:30 +0800] [2550] [INFO] Booting worker with pid: 2550
+[2022-04-29 14:54:30 +0800] [2551] [INFO] Booting worker with pid: 2551
+[2022-04-29 14:54:30 +0800] [2552] [INFO] Booting worker with pid: 2552
+[2022-04-29 14:54:30 +0800] [2553] [INFO] Booting worker with pid: 2553
+[2022-04-29 14:54:30 +0800] [2554] [INFO] Booting worker with pid: 2554
+2022-04-29 14:54:35,296 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:35,304 Scheduler started
+2022-04-29 14:54:35,312 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,078 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,084 Scheduler started
+2022-04-29 14:54:36,088 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,198 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,211 Scheduler started
+2022-04-29 14:54:36,226 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,233 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,244 Scheduler started
+2022-04-29 14:54:36,253 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,345 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,432 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,446 Scheduler started
+2022-04-29 14:54:36,458 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,486 Scheduler started
+2022-04-29 14:54:36,499 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,570 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,576 Scheduler started
+2022-04-29 14:54:36,580 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,633 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,642 Scheduler started
+2022-04-29 14:54:36,645 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:36,663 Starting scheduler in 'paused' mode -- it will not run any tasks, but it can be used to create, modify, or delete tasks.
+2022-04-29 14:54:36,672 Scheduler started
+2022-04-29 14:54:36,676 /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/psiturk/psiturk_js/psiturk.js
+2022-04-29 14:54:58,639 Accessing /exp: debugLJAEPX debug6ARTEH debugVBXYR7 
+2022-04-29 14:54:58,652 given Counter({(0, 0): 2}) chose (0, 0)
+2022-04-29 14:54:58,877 GET /sync route with id: debugVBXYR7:debug6ARTEH
+2022-04-29 14:55:30,196 PUT /sync route with id: debugVBXYR7:debug6ARTEH
+2022-04-29 14:55:30,211 saved data for debugVBXYR7:debug6ARTEH (current trial: 3)
+[2022-04-29 15:47:28 +0800] [2543] [INFO] Handling signal: winch
